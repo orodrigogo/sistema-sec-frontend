@@ -1,0 +1,47 @@
+#login-container {
+  width: 100%;
+  height: 100vh;
+
+  background: var(--primary) url("../../assets/logo_large_white.svg") no-repeat -50px top;
+  background-size: contain; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-container > img {
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+#login-form {
+  max-width: 500px; 
+}
+
+#login-form span {
+  color: var(--white);
+}
+
+#login-form button {
+  margin-top: 30px;
+}
+
+#login-form a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  margin-top: 50px;
+  color: var(--white);
+  text-decoration: none;
+
+  transition: color .3s;
+}
+
+#login-form a:hover {
+  color: var(--link-white-hover);
+}
+
+

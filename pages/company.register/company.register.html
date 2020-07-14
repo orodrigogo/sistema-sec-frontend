@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="shortcut icon" href="../../assets/icon.png" />
+
+  <title>Sistema Sec | Cadastro de Empresas</title>
+  
+  <link rel="stylesheet" type="text/css" href="../../styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="../../styles/components.css" />
+  <link rel="stylesheet" type="text/css" href="./company.register.styles.css" />
+</head>
+<body>
+  <!-- HEADER START -->
+  <header class="main-top-header">
+    <figure>
+      <img src="../../assets/logo_white.png" alt="Sistema Sec">
+    </figure>
+    <nav>
+      <a href="#">Agenda</a>
+      <a href="#">Cadastrar</a>
+      <a href="#">Empresa</a>
+      <a href="#">Relatório</a>
+    </nav>
+    <div>
+      <figure>
+        <img src="https://avatars0.githubusercontent.com/u/49030804?s=460&u=3dbd06708f28e1132e215182f8fbd3031f5045f1&v=4" alt="Sistema Sec">
+        <span>Rodrigo Gonçalves</span>
+      </figure>
+
+      <nav>
+        <a href="#">Perfil</a>
+        <a href="../login/login.html">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <div id="company-register-content">
+    <!-- CONTROLLERS START -->
+    <section id="company-register-controllers-container-top">
+      <h2 id="title-page">Cadastrar Empresa</h2>
+
+      <div id="company-register-controllers-buttons">
+        <button class="primary-button" type="submit">Agenda</button>
+        <button class="primary-button" type="submit">Cadastrar</button>
+        <button class="primary-button" type="submit">Empresa</button>
+        <button class="primary-button" type="submit">Relatório</button>
+      </div>
+    </section>
+    <!-- CONTROLLERS END -->
+
+    <!-- FORM START -->
+    <form id="company-register-form" action="#">
+      <div class="input-group">
+        <span>Nome da Empresa</span>
+        <input type="text" name="company-name" id="password">
+      </div>
+
+      <div class="inputs-inline">
+        <div class="input-group">
+          <span>CNPJ</span>
+          <input type="text" name="company-cnpj" id="company-cnpj">
+        </div>
+
+        <div class="input-group">
+          <span>Endereço</span>
+          <input type="text" name="company-addrres" id="company-addrres">
+        </div>
+      </div>
+
+      
+      <div class="inputs-inline">
+        <div class="input-group">
+          <span>CEP</span>
+          <input type="text" name="company-cep" id="company-cep">
+        </div>
+
+        <div class="input-group">
+          <span>Cidade</span>
+          <input type="text" name="company-city" id="company-city">
+        </div>
+
+        <div class="input-group">
+          <span>ESTADO</span>
+          <input type="text" name="company-state" id="company-state">
+        </div>
+      </div>
+
+      <div class="inputs-inline">
+        <div class="input-group">
+          <span>Setor</span>
+          <input type="text" name="company-cnpj" id="company-sector">
+        </div>
+
+        <div class="input-group">
+          <span>Equipamento</span>
+          <input type="text" name="company-addrres" id="company-equipament">
+        </div>
+      </div>
+
+      <div id="sub-controllers">
+        <button class="primary-button" type="submit">Gerar QrCode</button>
+        <button class="primary-button" type="submit">Adicionar</button>
+      </div>
+
+      <div class="input-group">
+        <span>Técnico Responsável</span>
+        <input type="text" name="company-responsible-technician" id="password">
+      </div>
+
+      <section id="company-register-controllers-container-bottom">
+          <button class="primary-button warning-bg-color" type="submit">Apagar</button>
+          <button class="primary-button" type="submit">Duplicar</button>
+          <button class="primary-button success-bg-color" type="submit">Salvar</button>
+      </section>
+
+
+    </form>
+    <!-- FORM END -->
+  </div>
+
+  
+</body>
+</html>

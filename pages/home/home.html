@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Sec | Home</title>
+
+  <link rel="stylesheet" type="text/css" href="../../styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="../../styles/components.css" />
+  <link rel="stylesheet" type="text/css" href="./home.styles.css" />
+  <link rel="stylesheet" type="text/css" href="../../styles/calendar.css" />
+</head>
+<body>
+  <!-- HEADER START -->
+  <header class="main-top-header">
+    <figure>
+      <img src="../../assets/logo_white.png" alt="Sistema Sec">
+    </figure>
+    <nav>
+      <a href="../company.register/company.register.html">Agenda</a>
+      <a href="../company.register/company.register.html">Cadastrar</a>
+      <a href="../company.register/company.register.html">Empresa</a>
+      <a href="../company.register/company.register.html">Relatório</a>
+    </nav>
+    <div>
+      <figure>
+        <img src="https://avatars0.githubusercontent.com/u/49030804?s=460&u=3dbd06708f28e1132e215182f8fbd3031f5045f1&v=4" alt="Sistema Sec">
+        <span>Rodrigo Gonçalves</span>
+      </figure>
+
+      <nav>
+        <a href="#">Perfil</a>
+        <a href="../login/login.html">Sair</a>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- CONTENT START -->
+  <div id="home-container">
+    <aside id="home-aside">
+      <div id="home-calendar"></div>
+
+      <div id="home-equipments">
+        <h3>Equipamentos</h3>
+
+        <ul>
+          <li>
+            <div class="warning-legend"></div>
+            <span>Urgente</span>
+          </li>
+          <li>
+            <div class="alert-legend"></div>
+            <span>Atenção</span>
+          </li>
+          <li>
+            <div class="success-legend"></div>
+            <span>Normal</span>
+          </li>
+        </ul>
+
+      </div>
+    </aside>
+
+    <div id="home-content">
+      <section>
+        <h3>Manutenção</h3>
+
+        <ul>
+          <li>
+            <span>Nome da Empresa</span>
+          </li>
+          <li>
+            <span>Nome do Equipamento</span>
+          </li>
+          <li>
+            <span>Data e horário do agendamento</span>
+          </li>
+          <li>
+            <span>Grau de atentimento</span>
+          </li>
+        </ul>
+
+        <div id="menu-maintenance-controllers">
+          <button class="primary-button" type="submit">Reagendar</button>
+          <button class="primary-button success-legend" type="submit">Realizado</button>
+          <button class="primary-button" type="submit">Ver informações</button>
+        </div>
+      </section>
+
+      <section>
+        <h3>Manutenção</h3>
+
+        <ul>
+          <li>
+            <span>Nome da Empresa</span>
+          </li>
+          <li>
+            <span>Nome do Equipamento</span>
+          </li>
+          <li>
+            <span>Data e horário do agendamento</span>
+          </li>
+          <li>
+            <span>Grau de atentimento</span>
+          </li>
+        </ul>
+
+        <div id="menu-maintenance-controllers">
+          <button class="primary-button" type="submit">Reagendar</button>
+          <button class="primary-button success-legend" type="submit">Realizado</button>
+          <button class="primary-button" type="submit">Ver informações</button>
+        </div>
+      </section>
+
+      <section>
+        <h3>Manutenção</h3>
+
+        <ul>
+          <li>
+            <span>Nome da Empresa</span>
+          </li>
+          <li>
+            <span>Nome do Equipamento</span>
+          </li>
+          <li>
+            <span>Data e horário do agendamento</span>
+          </li>
+          <li>
+            <span>Grau de atentimento</span>
+          </li>
+        </ul>
+
+        <div id="menu-maintenance-controllers">
+          <button class="primary-button" type="submit">Reagendar</button>
+          <button class="primary-button success-legend" type="submit">Realizado</button>
+          <button class="primary-button" type="submit">Ver informações</button>
+        </div>
+      </section>
+
+      <section>
+        <h3>Manutenção</h3>
+
+        <ul>
+          <li>
+            <span>Nome da Empresa</span>
+          </li>
+          <li>
+            <span>Nome do Equipamento</span>
+          </li>
+          <li>
+            <span>Data e horário do agendamento</span>
+          </li>
+          <li>
+            <span>Grau de atentimento</span>
+          </li>
+        </ul>
+
+        <div id="menu-maintenance-controllers">
+          <button class="primary-button" type="submit">Reagendar</button>
+          <button class="primary-button success-legend" type="submit">Realizado</button>
+          <button class="primary-button" type="submit">Ver informações</button>
+        </div>
+      </section>
+    </div>
+
+  </div>
+  <!-- CONTENT END -->
+
+
+  <script type="text/javascript" src="../../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.simple-calendar.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#home-calendar").simpleCalendar({
+        months: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        days: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'], //string of days starting from sunday
+        disableEmptyDetails: true,
+        minDate : "YYYY-MM-DD",         // minimum date
+        maxDate : "YYYY-MM-DD",         // maximum date
+        insertEvent: true,              // can insert events
+        displayEvent: true,             // display existing event
+        fixedStartDay: true,            // Week begin always by monday
+        event: [],                      // List of events
+        insertCallback : function(){}   // Callback when an event is added to the calendar
+      });
+    });
+  </script>
+</body>
+</html>

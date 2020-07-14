@@ -1,0 +1,84 @@
+#company-register-content {
+  min-width: 680px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+
+#company-register-controllers-container-top {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+#company-register-controllers-buttons {
+  display: flex;
+}
+
+#company-register-controllers-buttons  button{
+  min-width: 100px;
+  height: 35px;
+  margin-left: 7px;
+
+}
+
+
+
+.input-group {
+  margin-right: 10px;
+}
+
+.input-group:last-child {
+  margin-right: 0;
+}
+
+#sub-controllers {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+#sub-controllers > button {
+  width: 130px;
+  height: 30px;
+
+  font-size: 13px;
+  margin: 0 5px;
+  background-color: var(--gray-dark);
+
+  transition: all .3s;
+}
+
+#sub-controllers > button:hover {
+  opacity: .8;
+}
+
+.warning-bg-color:hover {
+  background-color: var(--notification);
+}
+
+.success-bg-color:hover {
+  background-color: var(--green);
+}
+
+
+#company-register-controllers-container-bottom {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+#company-register-controllers-container-bottom button {
+  width: 100px;
+  height: 35px;
+  margin-left: 7px;
+}

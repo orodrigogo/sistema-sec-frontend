@@ -1,0 +1,132 @@
+/* ##################### INPUT */
+.input-group {
+  width: 100%;
+
+  margin: 15px 0;
+}
+
+.input-group > span {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+
+.input-group > input {
+  width: 100%;
+
+  padding: 11px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+  transition: all .3s;
+}
+
+.input-group > input:focus {
+  border: 2px solid var(--tertiary);
+  padding: 10px 14px;
+}
+
+.inputs-inline {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* ##################### BUTTONS */
+.primary-button {
+  background-color: var(--tertiary);
+  color: var(--white);
+  padding: 5px 15px;
+
+  border: none;
+  border-radius: 30px;
+
+  height: 40px;
+  width: 100%;
+
+  transition: all .3s;
+}
+
+.primary-button:hover {
+  opacity: .8;
+}
+
+/* ##################### HEADER */
+.main-top-header {
+  max-width: 100%;
+  min-width: 800px;
+  height: 70px;
+
+  
+  background: rgb(54,88,127);
+  background: linear-gradient(0deg, rgba(54,88,127,1) 0%, rgba(68,108,157,1) 100%);
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.main-top-header > figure img {
+  height: 45px;
+}
+
+
+.main-top-header > nav a {
+  color: var(--white); 
+  font-weight: 700;
+  margin: 0 5px;
+
+  transition: color .3s;  
+}
+
+.main-top-header > nav a:hover {
+  color: var(--link-white-hover);
+} 
+
+
+.main-top-header > div {
+  display: flex;
+  flex-direction: column; 
+}
+
+.main-top-header > div > nav {
+  text-align: right;  
+}
+
+.main-top-header > div > nav a {
+  font-size: 14px;
+  color: var(--white); 
+  margin-left: 5px;
+
+  transition: color .3s;  
+}
+
+.main-top-header > div > nav a:hover {
+  color: var(--link-white-hover); 
+}
+
+
+.main-top-header > div > figure {
+  display: flex;
+  align-items: center;
+}
+
+.main-top-header > div > figure span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white); 
+}
+
+.main-top-header > div > figure img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+
+  margin-right: 5px;
+}
