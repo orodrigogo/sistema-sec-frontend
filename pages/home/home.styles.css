@@ -1,4 +1,8 @@
-#home-container {
+body {
+  min-width: 890px;
+}
+
+#home-container { 
   display: grid;
 
   grid-template-columns: 330px auto;
