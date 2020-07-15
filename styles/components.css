@@ -23,6 +23,25 @@
   transition: all .3s;
 }
 
+.input-group > select {
+  width: 100%;
+
+  padding: 11px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+  transition: all .3s;
+
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  background: transparent url("../assets/down-arrow.png") no-repeat 95% center;
+
+  cursor:pointer;
+
+}
+
+
+
 .input-group > input:focus {
   border: 2px solid var(--tertiary);
   padding: 10px 14px;
