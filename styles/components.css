@@ -47,6 +47,11 @@
   padding: 10px 14px;
 }
 
+.input-group > select:focus {
+  border: 2px solid var(--tertiary);
+  padding: 10px 14px;
+}
+
 .inputs-inline {
   display: flex;
   flex-direction: row;
